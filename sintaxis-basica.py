@@ -1,7 +1,7 @@
 print("hola clase")
 b = 3.14
 print(type(b))
-print("Hola\nAdios")
+print("Hola\nAdios") #\n para salto de linea
 
 a = 67
 print(a)
