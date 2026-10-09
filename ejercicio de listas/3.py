@@ -11,6 +11,6 @@ altura_media = altura_media / len(pokemons)
 # Dividimos la suma entre la cantidad de Pokémon
 
 for pokemon in pokemons:
-    if pokemon["altura_m"] > altura_media: 
+    if pokemon["altura_m"] < altura_media: 
 
         print(pokemon["nombre"],pokemon["altura_m"])
