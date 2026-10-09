@@ -1,11 +1,22 @@
-edad = int(input("Introduce su edad: "))
+edad = int(input("Dime la edad: "))
 
-if edad>= 18 and edad <= 120:
-    print("Mayor de edad")
+# Versión con IF
+if edad < 0:
+    print("Error")
 elif edad >= 0 and edad < 18:
     print("Menor de edad")
-elif edad < 0:
-    print("Error, edad no valida")
+elif edad >= 18 and edad <= 120:
+    print("Mayor de edad")
 else:
-    print("Eres un vampiro")
+    print("Vampiro")
 
+# Versión con MATCH
+match edad:
+    case e if e < 0:
+        print("Error")
+    case e if e >= 0 and e < 18:
+        print("Menor de edad")
+    case e if e >= 18 and e <= 120:
+        print("Mayor de edad")
+    case _:
+        print("Vampiro")
