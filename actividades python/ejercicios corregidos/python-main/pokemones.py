@@ -1,0 +1,1 @@
+pokemones= [{"nombre":"bulbasour","numeropokdx":1},{"nombre":"ivisour","numeropokdx":2}]
